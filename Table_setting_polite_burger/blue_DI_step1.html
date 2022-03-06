@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>green_scenario</title>
+    <style>
+        body{
+            background-color: #D8FAEF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+        }
+        button{
+            height: 10vh;
+            width: 35%;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+            font-size: 50px;
+            margin: 1.5% 30%;
+            cursor: pointer;
+
+        }
+        .wrapper h1{
+            margin: 16px 0;
+            font-family: Arial,serif;
+            font-size: 70px;
+            text-align: center;
+            display: inline-block;
+            transform: translateX(55%);
+        }
+        video{
+            width:100%;
+            height: 500px;
+        }
+        .wrapper{
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        .wrapper #button_click{
+            visibility: hidden;
+        }
+        .wrapper #video_off{
+            visibility: visible;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function showdiv() {
+            document.getElementById("button_click").style.visibility="visible";
+        }
+        setTimeout('showdiv()',3000);
+        function hidediv() {
+            document.getElementById("video_off").style.visibility="hidden";
+        }
+        setTimeout('hidediv()',15000);
+
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <h1>מביא את הכלים</h1>
+
+   <video id="video_off" playsinline autoplay muted>
+        <source src="vidForEXP.mp4" type="video/mp4">
+        Your browser does not support mp4 videos, change browser!
+    </video>
+
+    <script>
+        const timer = setTimeout(function () {
+            window.location = 'http://localhost:63342/final_project/Screen_Hebrew_ver/blue_DI_step2.html?_ijt=3r48l5st37eh5psks710elltcb'
+        }, 15000);
+    </script>
+
+
+
+</div>
+
+
+
+</body>
+</html>
